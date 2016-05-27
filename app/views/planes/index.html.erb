@@ -1,5 +1,9 @@
-<% @planes.each do |plane| %>
-<div>
-<h1><%= plane.name %></h1>
-</div>
-<% end %>
+<h1 class="heading col-xs-10  col-xs-offset-1">What is your favorite warbird?</h1>
+
+
+<div class="clear"></div>
+
+
+	<%=image_tag("/assets/snoopy.jpg", alt: "snoopy", :class => "img-responsive img-center") %>
+
+	<h1 class="col-xs-10  col-xs-offset-1"><%= @planes.inspect %></h1>
