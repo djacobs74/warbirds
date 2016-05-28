@@ -8,7 +8,7 @@ body {
 }
 
 .heading {
-	color: red;
+	color: #E32C00;
 	text-align: center;
 	font-family: 'major_snafuregular';
 
@@ -16,6 +16,14 @@ body {
 
 .form-font {
 	font-family: 'major_snafuregular';
+	color: #4A521F;
+	text-align: center;
+
+
+}
+
+.form-font a {
+	font-size: 26px;
 	color: #4A521F;
 
 }
@@ -186,3 +194,10 @@ p {
 	text-align: center;
 	position: relative;
 }
+
+
+.form-control {
+/* default is width: 100%; delete if not needed, it is included in simpleform */
+	width: 320px;
+}
+

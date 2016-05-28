@@ -1,7 +1,88 @@
-<div class="col-xs-10 col-xs-offset-1">
-<h1 class="form-font">Enter the name or model of your favorite Warbird!</h1>
+
+<h1 class="form-font col-xs-12">Click on your favorite Warbird!</h1>
+
+
+
+<div class="warbirds">
+	<div class="aces">
+
 <%= simple_form_for @plane do |f| %>
-    <%= f.input :name %>
-    <%= f.submit 'submit', class: 'btn btn-primary' %>
-  <% end %>
-  </div>
+<%= f.input_field :name, input_html: {value: f.object.name || 'BF 109'} %>
+<%= image_submit_tag("/assets/rsz_109.jpg", title: "BF 109", :class => "corners") %>
+<% end %>
+<%= simple_form_for @plane do |f| %>
+<%= f.input_field :name, input_html: {value: f.object.name || 'F-4U Corsair'} %>
+<%= image_submit_tag("/assets/rsz_f4u.jpg", title: "F-4U Corsair", :class => "corners") %>
+<% end %>
+<%= simple_form_for @plane do |f| %>
+<%= f.input_field :name, input_html: {value: f.object.name || 'Focke-Wulf FW 190'} %>
+<%= image_submit_tag("/assets/rsz_fw190.jpg", title: "Focke-Wulf FW 190", :class => "corners") %>
+<% end %>
+	</div>
+
+</div>
+
+<div class="clear"></div>
+
+	<div class="warbirds">
+		<div class="aces">
+
+<%= simple_form_for @plane do |f| %>
+<%= f.input_field :name, input_html: {value: f.object.name || 'P-38 Lightning'} %>
+<%= image_submit_tag("/assets/rsz_p38.jpg", title: "P-38 lightning", :class => "corners") %>
+<% end %>
+
+<%= simple_form_for @plane do |f| %>
+<%= f.input_field :name, input_html: {value: f.object.name || 'P-40 Warhawk'} %>
+<%= image_submit_tag("/assets/rsz_p40.jpg", title: "P-40 Warhawk", :class => "corners") %>
+<% end %>
+
+<%= simple_form_for @plane do |f| %>
+<%= f.input_field :name, input_html: {value: f.object.name || 'P-47 Thunderbolt'} %>
+<%= image_submit_tag("/assets/rsz_p47.jpg", title: "P-47 Thunderbolt", :class => "corners") %>
+<% end %>
+
+
+
+
+
+
+
+		
+		</div>
+	</div>
+
+	<div class="clear"></div>
+
+<div class="warbirds">
+	<div class="aces">
+
+<%= simple_form_for @plane do |f| %>
+<%= f.input_field :name, input_html: {value: f.object.name || 'Supermarine Spitfire'} %>
+<%= image_submit_tag("/assets/rsz_spitfire.jpg", title: "Supermarine Spitfire", :class => "corners") %>
+<% end %>
+<%= simple_form_for @plane do |f| %>
+<%= f.input_field :name, input_html: {value: f.object.name || 'Yak 9'} %>
+<%= image_submit_tag("/assets/rsz_yak9.jpg", title: "Yak 9", :class => "corners") %>
+<% end %>
+<%= simple_form_for @plane do |f| %>
+<%= f.input_field :name, input_html: {value: f.object.name || 'A6M Zero'} %>
+<%= image_submit_tag("/assets/rsz_zero.jpg", title: "A6M Zero", :class => "corners") %>
+<% end %>
+		</div>
+</div>
+<div class="warbirds">
+	<div class="aces">
+	<%= simple_form_for @plane do |f| %>
+<%= f.input_field :name, input_html: {value: f.object.name || 'F6F Hellcat'} %>
+<%= image_submit_tag("/assets/rsz_hellcat.jpg", title: "F6F Hellcat", :class => "corners") %>
+<% end %>
+<%= simple_form_for @plane do |f| %>
+<%= f.input_field :name, input_html: {value: f.object.name || 'P-51D Mustang'} %>
+<%= image_submit_tag("/assets/rsz_p51d.jpg", title: "P-51D Mustang", :class => "corners") %>
+<% end %>
+	</div>
+</div>
+
+
+
