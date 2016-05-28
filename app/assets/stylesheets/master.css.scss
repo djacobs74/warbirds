@@ -1,6 +1,9 @@
+
 body {
 	background: #A6B5CC;
 	overflow: hidden;
+	height: 100%;
+
 
 }
 
@@ -155,4 +158,31 @@ p {
 @-o-keyframes moveclouds {
 	0% {margin-left: 1000px;}
 	100% {margin-left: -1000px;}
+}
+
+
+
+.corners {
+	border-radius: 10px;
+	margin: 5px;
+}
+
+
+.snoopy {
+
+	border-radius: 10px;
+}
+
+.warbirds {
+		margin: auto;
+    width: 80%;
+    
+
+}
+
+.aces {
+	margin: auto;
+	display: block;
+	text-align: center;
+	position: relative;
 }
