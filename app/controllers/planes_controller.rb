@@ -9,12 +9,10 @@ class PlanesController < ApplicationController
 	end
 
 	def create
-		Plane.create(plane_params)
+		Plane.create(name: params[:name])
 		redirect_to root_path
 	end
 
-	def plane_params
-    params.require(:plane).permit(:name)
-  end
+	
 
 end
