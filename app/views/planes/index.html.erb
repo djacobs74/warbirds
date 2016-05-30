@@ -15,59 +15,90 @@
 
 	
 
-	<br />
+
 	<div class="form-font col-xs-12">
-	<%= link_to 'Choose your favorite!', new_plane_path(@planes)%>
+	<%= link_to 'Choose your favorite here!', new_plane_path(@planes)%>
+	</div>
+	<div class="clear">
+		<br />
+
+
+		<br />
+	<div class="form-font col-xs-12">
+	<p class="picks">Top Picks</p>
 	</div>
 	<div class="clear">
 		<br />
 	
-		<div class="booyah-box">
-			<%= @planes.inspect %>
-			
-		
-	</div>
+
+
+<div class="warbirds">
+	<div class="aces">
+
+<% @planes.each do |plane| %>
+	<% if plane.name == "P-51D Mustang" %>
+		<%=image_tag("/assets/rsz_p51d.jpg", title: "P-51D Mustang", :class => "corners") %>
+<% else %>
+		<%= nil %>
+		<% end %>
+		<% if plane.name == "BF 109" %>
+		<%=image_tag("/assets/rsz_109.jpg", title: "BF 109", :class => "corners") %>
+<% else %>
+		<%= nil %>
+		<% end %>
+		<% if plane.name == "F-4U Corsair" %>
+		<%=image_tag("/assets/rsz_f4u.jpg", title: "F-4U Corsair", :class => "corners") %>
+<% else %>
+		<%= nil %>
+		<% end %>
+		<% if plane.name == "Focke-Wulf FW 190" %>
+		<%=image_tag("/assets/rsz_fw190.jpg", title: "Focke-Wulf FW 190", :class => "corners") %>
+<% else %>
+		<%= nil %>
+		<% end %>
+		<% if plane.name == "P-38 Lightning" %>
+		<%=image_tag("/assets/rsz_p38.jpg", title: "P-38 Lightning", :class => "corners") %>
+<% else %>
+		<%= nil %>
+		<% end %>
+		<% if plane.name == "P-40 Warhawk" %>
+		<%=image_tag("/assets/rsz_p40.jpg", title: "P-40 Warhawk", :class => "corners") %>
+<% else %>
+		<%= nil %>
+		<% end %>
+		<% if plane.name == "P-47 Thunderbolt" %>
+		<%=image_tag("/assets/rsz_p47.jpg", title: "P-47 Thunderbolt", :class => "corners") %>
+<% else %>
+		<%= nil %>
+		<% end %>
+		<% if plane.name == "Supermarine Spitfire" %>
+		<%=image_tag("/assets/rsz_spitfire.jpg", title: "Supermarine Spitfire", :class => "corners") %>
+<% else %>
+		<%= nil %>
+		<% end %>
+		<% if plane.name == "Yak 9" %>
+		<%=image_tag("/assets/rsz_yak9.jpg", title: "Yak 9", :class => "corners") %>
+<% else %>
+		<%= nil %>
+		<% end %>
+		<% if plane.name == "A6M Zero" %>
+		<%=image_tag("/assets/rsz_zero.jpg", title: "A6M Zero", :class => "corners") %>
+<% else %>
+		<%= nil %>
+		<% end %>
+		<% if plane.name == "F6F Hellcat" %>
+		<%=image_tag("/assets/rsz_hellcat.jpg", title: "F6F Hellcat", :class => "corners") %>
+<% else %>
+		<%= nil %>
+<% end %>
+<% end %>
+
+
+</div>
+</div>
+
+<br />
+<br />
 <br />
 
-
 	
-<div class="clear">
-	
-<div class="warbirds">
-	<div class="aces">
-		
-		<%=image_tag("/assets/rsz_109.jpg", alt: "ME109", :class => "corners") %>
-		
-		<%=image_tag("/assets/rsz_f4u.jpg", alt: "Corsair", :class => "corners center") %>
-
-		<%=image_tag("/assets/rsz_fw190.jpg", alt: "Focke Wolfe", :class => "corners") %>
-		</div>
-</div>
-
-<div class="clear"></div>
-
-	<div class="warbirds">
-		<div class="aces">
-		<%=image_tag("/assets/rsz_p38.jpg", alt: "lightning", :class => "corners") %>
-		<%=image_tag("/assets/rsz_p40.jpg", alt: "Warhawk", :class => "corners") %>
-		<%=image_tag("/assets/rsz_p47.jpg", alt: "Thunderbolt", :class => "corners") %>
-		</div>
-	</div>
-
-	<div class="clear"></div>
-
-<div class="warbirds">
-	<div class="aces">
-		<%=image_tag("/assets/rsz_spitfire.jpg", alt: "Spitfire", :class => "corners") %>
-		<%=image_tag("/assets/rsz_yak9.jpg", alt: "Yak 9", :class => "corners") %>
-		<%=image_tag("/assets/rsz_zero.jpg", alt: "Zero", :class => "corners") %>
-		</div>
-</div>
-<div class="warbirds">
-	<div class="aces">
-		<%=image_tag("/assets/rsz_hellcat.jpg", alt: "Hellcat", :class => "corners") %>
-		<%=image_tag("/assets/rsz_p51d.jpg", alt: "Mustang", :class => "corners") %>
-	</div>
-</div>
-
-
